@@ -1,0 +1,151 @@
+:root{
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+
+.bg-black{
+    background-color: black;
+}
+
+#img1{
+    object-fit: cover;
+}
+
+.texto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+ .card-grid{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+  }
+
+  .card{
+    list-style: none;
+    position: relative;
+    border-radius: 0.7em;
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover .card:not(:hover) .card__background {
+    filter: brightness(0.5) saturate(1) contrast(1.2) blur(10px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  }
+
+header{
+    width: 450px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  header:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.7s;
+  }
+
+  #input-text{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #movie img{
+    width: 300px;
+    height: 400px;
+     border: 1px solid white;
+  }  
+
+  #movieInput {
+    background-color: #F5F5F5;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+  }  
+
+   #trailer{
+  width: 90%;
+  height: 90%;
+  }
+
+  .boton-container button {
+    font-size: 1.4rem; /* Aumenta el tamaño de fuente */
+    background-color: hsl(0, 0%, 100%); /* Cambia el color de fondo */
+    color: #000000; /* Cambia el color del texto */
+    padding: 10px 25px; /* Añade un relleno interno */
+    border-radius: 50px; /* Agrega bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+  
+  .boton-container button:hover {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #aaaaaa; /* Cambia el color de fondo al pasar el mouse */
+    color: #333; /* Cambia el color del texto al pasar el mouse */
+    transform: translateY(-5px); /* Mueve ligeramente el botón hacia arriba */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  

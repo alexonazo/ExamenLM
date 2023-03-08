@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    
+<div class="bg-black text-white">   
+    
+    <nav class="navbar navbar-expand-lg bg-light container-fluid">
+        <a class="navbar-home" href="#"><img src="./Logo.png"  width="60px" id="logo"></a>
+           <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"><i class="bi bi-dash-lg"></i></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+             <div class="navbar-nav">
+               <a class="nav-link active text-dark" aria-current="page" href="#">Ranking</a>
+               <a class="nav-link text-dark" href="#">Críticas</a>
+               <a class="nav-link text-dark" href="#">Login</a>
+             </div>
+           </div>
+         </nav>
+
+         <div class="container-fluid align">
+           <div class="cabecera row p-3">
+              <img src="./img1.jpg" class="img-fluid border border-ligth" id="img1" style="max-height: 900px;">
+           </div>
+         </div>
+
+    <div class="container-fluid gallery mt-4 mb-4 p-3 border-bottom border-ligth">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./img2.jpg" class="img-fluid border border-ligth" style="max-height: 900px;">
+          </div>
+          <div class="col-lg-6 my-auto texto">
+            <h1><strong>Bienvenido a MundoCine</strong></h1>
+            <p>Aquí encontrarás información sobre las últimas películas en cartelera, próximos estrenos, horarios de funciones y mucho más.</p>
+            <h2><strong>Variedad de géneros</strong></h2>
+            <p>Nuestra cartelera cuenta con una amplia variedad de películas de diferentes géneros, desde comedias hasta dramas, pasando por acción y terror. Además, contamos con salas de cine equipadas con la última tecnología de imagen y sonido para que disfrutes al máximo de tu experiencia cinematográfica.</p>
+            <h2><strong>Noticias y reseñas</strong></h2>
+            <p>En nuestra sección de noticias y reseñas, encontrarás información sobre las últimas tendencias en el mundo del cine, así como críticas de las películas más recientes. También tenemos una sección de entrevistas exclusivas con los actores y directores más destacados del momento.</p>
+            <p>¡Gracias por visitarnos y esperamos verte pronto en nuestras salas de cine!</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery -->
+      <section class="hero-section text-center border-bottom border-ligth p-3">
+        <h2>No te pierdas nuestos Rankings</h2>
+        <div class="card-grid row mt-5">
+          <div class="col-lg-4 col-sm-12">
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(./accion.jpg)"></div>
+              <div class="card__content">
+                <h3 class="card__heading">Acción</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(./terror.jpg)"></div>
+              <div class="card__content">
+                <h3 class="card__heading">Terror</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(./spider.jpg)"></div>
+              <div class="card__content">
+                <h3 class="card__heading">Marvel</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Gallery -->
+
+    <div class="d-flex flex-column align-items-center text-center mt-5 mb-5 mx-auto border-bottom border-ligth" > 
+      <div class="m-1" id = "input-text"> 
+        <h2>¿Buscas información sobre alguna película?</h2>
+        <h5>Ingresa el título</h5>   
+      </div>
+      <div class="boton-container mt-1 mb-1">
+        <input type="text" id="movieInput">
+        <button id="boton" class="btn btn-lg btn-light">Buscar</button>
+      </div>
+    </div>
+
+    <div class="mt-5" id="movie"></div>
+
+    <footer class="text-center text-white" style="background-color: hwb(0 100% 0%);">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://es-es.facebook.com/"
+              
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-facebook"></i></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-twitter"></i></a>
+      
+            <!-- Google -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-google"></i></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-instagram"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+
+    </div> 
+
+    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
